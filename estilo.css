@@ -1,3 +1,7 @@
 body {
-    background-color:blueviolet;
+    background-color:rgb(130, 248, 51);
+    font-family: 'Times New Roman', Times, serif;
+}
+h1 {
+    color:whitesmoke;
 }
