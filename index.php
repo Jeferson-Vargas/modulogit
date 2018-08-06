@@ -9,6 +9,19 @@
     <!-- <script src="main.js"></script> -->
 </head>
 <body>
+<?php
+    if (isset($_POST['nome']))
+    {
+        echo "enviado";
+    }
+    else {
+        echo "nao enviado";
+    }
+?>
+<form method="POST">
+    <input type="text" name="nome" placeholder="Nome..." />
+    <input type="submit" valor="Enviar" />
+    </form>
     
 </body>
 </html>
