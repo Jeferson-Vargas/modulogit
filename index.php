@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -21,7 +21,7 @@
 <form method="POST">
     <input type="text" name="nome" placeholder="Nome..." />
     <input type="submit" valor="Enviar" />
-    </form>
+</form>
     
 </body>
 </html>
