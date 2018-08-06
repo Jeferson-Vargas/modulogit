@@ -17,9 +17,8 @@
 				$email = $_POST['email'];
 				$senha = $_POST['senha'];
 
-                echo "bem vindo: ".$email;
-				echo " sua senha é: ".$senha;
-
+                echo "<h1>bem vindo: ".$email;
+				echo " sua senha é: ".$senha."</h1>";
 			} 
 			else
 			{
@@ -37,6 +36,11 @@
 		<input type="text" name="email" placeholder="email..."></br></br>
 		<input type="password" name="senha" placeholder="senha..."></br></br>
 		<input type="submit" value="Enviar Dados">
-	</form>    
+	</form>
+	<div class="teste">
+		<form class="formulario" method="POST">
+		<input type="text" name="texto" />
+		</form>	
+	</div>
 </body>
 </html>
