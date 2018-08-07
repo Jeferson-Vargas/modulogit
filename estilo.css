@@ -1,8 +1,81 @@
 body {
     background-color:rgb(130, 248, 51);
     font-family: 'Times New Roman', Times, serif;
+    text-align:center;
 }
 h1 {
     color:whitesmoke;
     text-shadow: 1px 1px #000;
+}
+.area {
+	display: flex;
+
+	 
+}
+.botao {
+	flex:1;
+    margin:30px;
+}
+.container{
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario form {
+	background-color: #c1c1c1;
+	width:200px;
+	height:110px;
+	padding: 20px;
+} 
+body ul li {
+	list-style-type: none;
+}
+.calculadora input{
+	width: 50px;
+}
+
+.areaCalc{
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora fieldset {
+	background-color: #c1c1c1;
+	width:250px;
+	height:320px;
+	padding: 10px;
+} 
+
+.calculadora legend {
+	color:#e00303;
+	text-shadow: 0px 0px #000;
+}
+
+input#numero1,
+input#numero2{
+   background-color:purple;
+   color: #fff;
+   font-size: 15px;
+   width: 50px;
+}
+input#somaTotal{
+    background-color: #777;
+   color: #fff;
+   font-size: 1.8em;
+   width: 80px;
+   font-weight: bold;
+   text-align: center;
+}
+form h2{
+   color: red;
+}
+
+form #option{
+   font-size: 1.4em;
+   background-color: #777;
+   color: #6f9;
 }
