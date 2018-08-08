@@ -87,8 +87,6 @@
 
                 <button type="button" onclick="calculadora()">enviar</button>
                 <button type="reset" onclick="limp()">Limpar</button><br/><br/>
-              
-
 			</fieldset>
 		</div>
 	</div>

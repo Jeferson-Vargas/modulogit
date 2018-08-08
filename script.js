@@ -74,3 +74,13 @@ function calculadora(){
 function limp(){
 	document.getElementById("somaTotal").value = "";
 }
+
+/* 
+	Mudar css via javascript
+
+*/
+
+function mudarEstilo(){
+	var obj = document.getElementById('id');
+    	obj .setAttribute('class', 'meuestilo');//(meuestilo) é uma classe css
+}
