@@ -57,7 +57,7 @@
 
 	<input type="text" id="ingrediente" />
 
-	<button onclick="adicionarIngrediente()">Adicionar</button></body></html></br>
+	<button onclick="adicionarIngrediente()">Adicionar</button></br>
 
 	<ul id="lista">
 		<li>Item 1</li>
