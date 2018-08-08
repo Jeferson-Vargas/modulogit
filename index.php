@@ -70,17 +70,18 @@
 			<fieldset>
            		<legend>Calculadora Simples</legend>
 				<h2>Escolha o tipo de Operação: </h2>
-              	<select id="option">
+              	<select id="option" onchange="mudaOperacao(this)">
                 	<option value="1" selected="selected"> Somar </option >
                 	<option value="2"> Subtrair </option >
                 	<option value="3"> Dividir </option >
                 	<option value="4"> Multiplicar </option >
                	</select>
                	<br/><br/>
-               	Numero 1 :
-               	<input type="text" name="numero" id="numero1"><br/><br/>
-
-               	Numero 2 :
+               
+               	<input type="text" name="numero" id="numero1"><br/>
+               	
+                <input type="text" name="operacao" id="opera" disabled /><br/>
+               	
                 <input type="text" name="numero" id="numero2"><br/><br/>
 
                  Total: <input type="text" id="somaTotal" class="formtTotal" disabled /> 

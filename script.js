@@ -75,6 +75,31 @@ function limp(){
 	document.getElementById("somaTotal").value = "";
 }
 
+function mudaOperacao(objeto) {
+	var valor = parseInt(objeto.value);
+	switch(valor){
+     
+       case 1: 
+          
+         document.getElementById("opera").value = "+";
+      break;
+      
+       case 2: 
+          
+          document.getElementById("opera").value = "-";
+       break;
+       
+       case 3:   
+         
+         document.getElementById("opera").value = "/";
+       break;
+       
+       case 4:
+         
+         document.getElementById("opera").value = "X";
+         break;
+  }
+}
 /* 
 	Mudar css via javascript
 

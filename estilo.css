@@ -61,6 +61,13 @@ input#numero2{
    color: #fff;
    font-size: 15px;
    width: 50px;
+   text-align: center;
+}
+input#opera {
+	border:none;
+	background: none;
+	font-size:20px;
+	text-align: center;
 }
 input#somaTotal{
     background-color: #777;
