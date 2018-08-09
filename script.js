@@ -130,25 +130,35 @@ function addBola() {
 	bola.setAttribute("onclick", "estourar(this)");
 
 	document.getElementById('parque').appendChild(bola);
+
+	if (parseInt(document.getElementById("pontuacao").value) == 5) {
+		window.clearInterval(Intervalo);
+		alert("Você venceu!!");
+
+	}
 }
 
 function estourar(elemento) {
-	
 	document.getElementById("pontuacao").value = parseInt(document.getElementById("pontuacao").value)+1;
 	document.getElementById('parque').removeChild(elemento);
+	
+
+}
+var Intervalo;
+
+function iniciar(){
+
+    Intervalo = window.setInterval(addBola, 1000);
+
 }
 
-function iniciar() {
-	setInterval(addBola, 1000);
-	alert ("inicio");
-}
+// function iniciar() {
 
-// function posicao(e) {
-//     var el = document.getElementById('parque');
-//     var coordenadas = el.getBoundingClientRect();
-//     var resLeft = coordenadas.left;
-//     var resTop = coordenadas.top;
+// 	setInterval(addBola, 1000);
+// 	var total = document.getElementById("pontuacao").innerHTML;
+// 	if (total == "5") {
+// 		alert("ola");
+// 	} else {
+// 		alert("nao");
+// 	}
 // }
-
-// document.getElementById('meio').addEventListener('click', posicao);
-// document.getElementById('fundo').addEventListener('click', posicao);

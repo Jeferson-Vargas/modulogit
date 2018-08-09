@@ -92,6 +92,7 @@
 	</div>
 	<br/>
 	<hr/>
+	<h1>Estoura balões</h1>
 	<div class="parkContent" >
 		<div class="parkMold">
 			<div id="parque" class="parque" >
@@ -102,5 +103,6 @@
 
 	</div>
 	<div class="ponto"><input type="text" value="0" id="pontuacao"/></div>
+
 </body>
 </html>
