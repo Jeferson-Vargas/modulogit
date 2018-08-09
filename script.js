@@ -100,15 +100,6 @@ function mudaOperacao(objeto) {
          break;
   }
 }
-/* 
-	Mudar css via javascript
-
-*/
-
-function mudarEstilo(){
-	var obj = document.getElementById('id');
-    	obj .setAttribute('class', 'meuestilo');//(meuestilo) é uma classe css
-}
 
 /*
 	Caça balão
@@ -152,13 +143,3 @@ function iniciar(){
 
 }
 
-// function iniciar() {
-
-// 	setInterval(addBola, 1000);
-// 	var total = document.getElementById("pontuacao").innerHTML;
-// 	if (total == "5") {
-// 		alert("ola");
-// 	} else {
-// 		alert("nao");
-// 	}
-// }
