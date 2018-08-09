@@ -3,11 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css" />
-    <script rel="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="estilo.css" />
+    <script type="text/javascript" src="script.js"></script>
 </head>
-<body>
+<body onload="iniciar()">
 <?php
 		if (empty($_POST['email']) == false) 
 		{
@@ -91,5 +90,17 @@
 			</fieldset>
 		</div>
 	</div>
+	<br/>
+	<hr/>
+	<div class="parkContent" >
+		<div class="parkMold">
+			<div id="parque" class="parque" >
+				
+			</div>
+
+		</div>
+
+	</div>
+	<div class="ponto"><input type="text" value="0" id="pontuacao"/></div>
 </body>
 </html>

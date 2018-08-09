@@ -109,3 +109,46 @@ function mudarEstilo(){
 	var obj = document.getElementById('id');
     	obj .setAttribute('class', 'meuestilo');//(meuestilo) é uma classe css
 }
+
+/*
+	Caça balão
+*/
+
+function addBola() {
+
+	var el = document.getElementById('parque');
+    var coordenadas = el.getBoundingClientRect();
+    var resLeft = coordenadas.left;
+    var resTop = coordenadas.top;
+    //alert (resLeft);
+
+    var bola = document.createElement("div");
+	bola.setAttribute("class", "bola");
+	var p1 = Math.floor(Math.random() * 400);
+	var p2 = Math.floor(Math.random() * 280);
+	bola.setAttribute("style", "left:"+(resLeft+p1)+"px; top:"+(resTop+p2)+"px;");
+	bola.setAttribute("onclick", "estourar(this)");
+
+	document.getElementById('parque').appendChild(bola);
+}
+
+function estourar(elemento) {
+	
+	document.getElementById("pontuacao").value = parseInt(document.getElementById("pontuacao").value)+1;
+	document.getElementById('parque').removeChild(elemento);
+}
+
+function iniciar() {
+	setInterval(addBola, 1000);
+	alert ("inicio");
+}
+
+// function posicao(e) {
+//     var el = document.getElementById('parque');
+//     var coordenadas = el.getBoundingClientRect();
+//     var resLeft = coordenadas.left;
+//     var resTop = coordenadas.top;
+// }
+
+// document.getElementById('meio').addEventListener('click', posicao);
+// document.getElementById('fundo').addEventListener('click', posicao);
